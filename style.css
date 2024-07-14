@@ -1,0 +1,782 @@
+/* Default styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.common-h2 {
+    margin: 30px 0;
+    border-bottom: 1.3px solid #222;
+}
+
+.common-h3 {
+    margin: 20px 0;
+    border-bottom: 1px solid #222;
+}
+
+/* Home-Page */
+
+.home-page {
+    height: 100vh;
+    padding: 0 20px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+
+}
+
+video {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    z-index: 9;
+
+}
+
+/* navbar */
+
+.left {
+    display: flex;
+    flex: 4;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    transition: 1s ease;
+
+}
+
+.logo img {
+    width: 26px;
+    transition: 2s ease-in;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+
+}
+
+.links {
+    margin-right: 35px;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+
+}
+
+.links:hover {
+    scale: 1.02;
+    color: #1985a1;
+
+}
+
+.logo:hover img {
+    transform: rotate(360deg);
+
+}
+
+.logo:hover span {
+    scale: 1.005;
+
+}
+
+.right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+}
+
+.button-1 {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.button-2 {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 0 20px;
+    color: #000;
+    transition: 0.2s ease-in-out;
+
+}
+
+.button-1:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+
+}
+
+.button-2:hover {
+    border: 1px solid #1985a1;
+    color: #fff;
+    background-color: #1985a1;
+
+}
+
+/* header */
+
+header {
+    height: 50px;
+    margin: 20px 0;
+    padding: 0 20px;
+
+}
+
+header ul {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.indicator {
+    color: #fff;
+    animation: blink 5s ease infinite;
+
+}
+
+header ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 4px;
+    transition: 1s ease-in-out;
+    position: relative;
+
+}
+
+header ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    color: #fff;
+    right: 100%;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+
+}
+
+header ul li a:hover::before {
+    right: 0;
+    visibility: visible;
+
+}
+
+/* Home Page */
+
+.homepage {
+    height: calc(100% - 140px);
+    color: #fff;
+
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+
+}
+
+.main-container h1 {
+    font-size: 50px;
+    margin: 30px 0 20px;
+
+}
+
+.main-container p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 40px;
+
+}
+
+.main-container .home-info {
+    display: flex;
+    gap: 60px;
+    margin: 70px;
+
+}
+
+.box {
+    width: 130px;
+    height: 120px;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+}
+
+.box:hover {
+    background-color: #fff;
+    color: #1985a1;
+
+}
+
+.box h2 {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.box h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+
+}
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.slider {
+    display: flex;
+    height: 100vh;
+
+}
+
+.single-car_page {
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    gap: 50px;
+
+}
+
+.single-car_page .single-car_page-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.single-car_page .single-car_page-left .car-img {
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+
+}
+
+.single-car_page-left .car-img .main-car_img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+.single-car_page .single-car_page-left .more-car_img {
+    height: 25%;
+    display: flex;
+    gap: 10px;
+
+}
+
+.single-car_page .single-car_page-left .more-car_img .scmi {
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.single-car_page .single-car_page-left .more-car_img .scmi img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.basic-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 25%;
+    align-items: center;
+
+}
+
+.basic-info .info {
+    border-bottom: 1px solid #222;
+    display: flex;
+    gap: 15px;
+
+}
+
+/* Single Car Page Right */
+
+.single-car_page .single-car_page-right {
+    flex: 1;
+
+}
+
+.single-car_page .single-car_page-right h1 {
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #1985a1;
+}
+
+.single-car_page .single-car_page-right .rating {
+    margin: 10px 0px;
+    color: #1985a1;
+
+}
+
+.single-car_page .single-car_page-right .car-desc {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
+    opacity: 0.8;
+
+}
+
+.single-car_page .single-car_page-right .features {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.single-car_page .single-car_page-right .features p {
+    padding: 5px;
+    border: 1px solid #1985a1;
+    margin: 10px 15px 0 0;
+    width: fit-content;
+    color: #1985a1;
+
+}
+
+/* Price Section */
+
+.co-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #1985a1;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.single-car_page-right button:hover {
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* Check Out Page */
+
+.checkout-page {
+    width: 70vh;
+    height: 96vh;
+    padding: 10px 20px;
+    background-color: #000000f6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 5px;
+    z-index: 99;
+    display: none;
+
+}
+
+.checkout-page h2 {
+    color: #fff;
+    border-color: #fff;
+
+}
+
+.checkout-page .top form,
+.checkout-page .bottom form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.checkout-page .top input,
+select,
+.checkout-page .bottom input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    padding: 5px;
+    color: #fff;
+}
+
+.top form input::placeholder,
+.bottom form input::placeholder {
+
+    color: #fff;
+}
+
+input[type='date'] {
+    --webkit-calendar-picker-indicator: #fff;
+    color: #fff;
+}
+
+/* Guide */
+
+.guide {
+    padding: 20px 30px 0px 30px;
+    background-color: #1985a1;
+    color: #fff;
+
+}
+
+.guide-step_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+    padding: 25px;
+
+}
+
+.guide p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
+    opacity: 0.8;
+
+}
+
+.guide-step_container .step {
+    flex: 1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    height: 100%;
+    align-items: stretch;
+    transition: 0.3s ease-in-out;
+    cursor: default;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.guide-step_container .step:hover {
+    background-color: #222;
+    border-color: #222;
+
+}
+
+.guide-step_container .step h3 {
+    border-bottom: 1px solid #fff;
+    padding: 2px;
+
+}
+
+.guide-step_container .step i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    align-items: center;
+    margin-block: 10px;
+
+
+}
+
+.guide-step_container .step:hover h3 {
+    border-bottom: 1px solid #fff;
+
+}
+
+.guide-step_container .step h3 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+/* ABOUT */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Images/audi-steering.jpg), #00000095;
+    color: #fff;
+    position: relative;
+
+}
+
+.about h2 {
+    padding-top: 30px;
+    border-bottom: 1.3px solid #fff;
+
+}
+
+.about .about-container {
+    width: 90%;
+    height: 80%;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: flex;
+}
+
+.about-container h3 {
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 25px;
+}
+
+.about-container p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.a-c-left {
+    flex: 2;
+    border-right: 1px solid #fff;
+    padding: 15px 20px;
+}
+
+.a-c-right {
+    padding: 15px 20px;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.a-c-right p {
+    flex: 1;
+
+
+}
+
+.a-c-right button {
+    padding: 8px;
+    background-color: #1985a1;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+.a-c-right button:hover {
+    background-color: #222;
+    color: #fff;
+
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 20px 30px;
+
+}
+
+.contact h2 {
+    color: #1985a1;
+    border-bottom: 1.3px solid #1985a1;
+}
+
+.contact .contact-form {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.contact .contact-form form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contact .contact-form form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border: 1px solid #1985a1;
+    border-radius: 5px;
+    color: #1985a1;
+
+}
+
+.contact .contact-form form input::placeholder,
+textarea::placeholder {
+    color: #1985a1;
+
+}
+
+.contact .contact-form form textarea {
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border: 1px solid #1985a1;
+    border-radius: 5px;
+    color: #1985a1;
+
+}
+
+.contact-form form button {
+    padding: 8px;
+    background-color: #1985a1;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+
+}
+
+.contact-form form button:hover {
+    background-color: #222;
+
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+footer .f-1,
+footer .f-2,
+footer .f-3,
+footer .f-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+footer .f-4 div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer p {
+    cursor: pointer;
+    opacity: 0.8;
+}

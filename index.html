@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="home-page">
+        <video autoPlay loop muted src="./Images/bg-video.mp4"></video>
+        <nav>
+            <div class="left">
+
+                <a class="logo" href="#">
+                    <img src="./Images/logo.png" alt="" />
+                    <span>Lux Drive</span>
+                </a>
+
+            </div>
+
+            <div class="right">
+
+                <a class="links" href="/">Home</a>
+                <a class="links" href="#guide">Guide</a>
+                <a class="links" href="#about">About</a>
+                <a class="links" href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+        <header>
+            <ul>
+                <li class="indicator">Choose a Car &rarr;</li>
+                <li><a class="car-link" href="#car">Mercedes</a></li>
+                <li><a class="car-link" href="#car">BMW</a></li>
+                <li><a class="car-link" href="#car">Audi</a></li>
+                <li><a class="car-link" href="#car">Tesla</a></li>
+                <li><a class="car-link" href="#car">porche</a></li>
+                <li><a class="car-link" href="#car">Rolls-Royce</a></li>
+            </ul>
+        </header>
+
+        <div class="homepage">
+            <div class="main-container">
+                <h1>Drive Your Dream Car Today</h1>
+                <p>At <span>Premier Car </span>Rental's we're committed to providing you with a <br /> superior
+                    rentalexperience every time.</p>
+
+                <div class="home-info">
+                    <div class="box">
+                        <h2>6</h2>
+                        <h3>Premium <br> Cars</h3>
+                    </div>
+                    <div class="box">
+                        <h2>$19.99/Day</h2>
+                        <h3>Lux Price</h3>
+                    </div>
+                    <div class="box">
+                        <h2>5 Minutes</h2>
+                        <h3>Booking Time</h3>
+                    </div>
+                    <div class="box">
+                        <h2>No Hidden Charge</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Luxury At Your Fingertips</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER -->
+
+    <div class="slider">
+
+        <div id="car" class="single-car_page">
+
+            <div class="single-car_page-left">
+
+                <div class="car-img">
+                    <img class="main-car_img" src="./Images/mercedes.jpg" alt="">
+                </div>
+
+                <div class="more-car_img">
+
+                    <div class="scmi">
+                        <img class="car-steering_img" src="./Images/mercedes-steering.jpg" alt="">
+                    </div>
+
+                    <div class="scmi">
+                        <img class="car-wheel_img" src="./Images/mercedes-wheel.jpg" alt="">
+                    </div>
+
+                    <div class="scmi">
+                        <img class="car-logo_img" src="./Images/mercedes-logo.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="basic-info">
+
+                    <div class="info">
+                        <i class="fa-solid fa-couch"></i>
+                        <p>5 seater</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-gas-pump"></i>
+                        <p>Diesel</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p>12km/l</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-square-check"></i>
+                        <p>Automatic</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="single-car_page-right">
+
+                <h1 class="car-name">Mercedes-Benz S-Class</h1>
+
+                <div class="rating">
+                    <i class=" fa-solid fa-star"></i>
+                    <i class=" fa-solid fa-star"></i>
+                    <i class=" fa-solid fa-star"></i>
+                    <i class=" fa-regular fa-star"></i>
+                    <i class=" fa-regular fa-star"></i>
+                </div>
+
+                <p class="car-desc">The Mercedes-Benz S-Class combines luxurious elegance with advanced technology,
+                    setting the benchmark for premium sedans.</p>
+
+                <div class="features">
+                    <p>Air Conditioning</p>
+                    <p>Audio System</p>
+                    <p>Wi-fi</p>
+                    <p>Black Leather Interier</p>
+                    <p>Rain Sensors</p>
+                    <p>Lux</p>
+                </div>
+
+                <h2 class="common-h2">Prices</h2>
+
+                <h3 class="hourly-price common-h3">$120/hour</h3>
+                <h3 class="daily-price common-h3">$199/day</h3>
+                <h3 class="monthly-price common-h3">$2999/month</h3>
+
+                <h2 class="common-h2">Rent Now</h2>
+
+
+                <button class="co-btn">Check Out</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Check Out Section -->
+
+    <div class="checkout-page">
+        <div class="top">
+            <h2 class="common-h2">Personal Information</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="number" placeholder="Phone">
+
+                <select name="" id="">
+                    <option value="">Mercedes-Benz S-Class</option>
+                    <option value="">BMW 7 Series</option>
+                    <option value="">Audi A8</option>
+                    <option value="">Tesla Model S</option>
+                    <option value="">Porsche Panamera</option>
+                    <option value="">Rolls Royce Phantom</option>
+                </select>
+
+                <input type="text" placeholder=" Car Delivery Address">
+                <input type="date" placeholder="From">
+                <input type="date" placeholder="To">
+
+            </form>
+
+        </div>
+
+        <div class="bottom">
+
+            <h2 class="common-h2">Card Details</h2>
+
+            <form>
+                <input type="number" placeholder="Card Number">
+            </form>
+            <form>
+                <input type="text" placeholder="mm">
+                <input type="text" placeholder="yyyy">
+                <input type="text" placeholder="cvv">
+
+            </form>
+            <button class="co-btn">check Out</button>
+        </div>
+
+    </div>
+
+    <!-- Guide Section -->
+
+    <div class="guide" id="guide">
+
+        <h2 class="g-subheading">Process of Easy Booking</h2>
+        <p>In three simple steps, you can book your luxury car and enjoy the ride.</p>
+
+        <div class="guide-step_container">
+            <div class="step">
+
+                <h3>Choose a Luxury Car</h3>
+                <i class="fa-solid fa-car"></i>
+                <p>Begin by selecting a luxury car from our extensive fleet, tailored to fit your style and needs.
+                    Explore our options to find the perfect vehicle that resonates with your personality.</p>
+            </div>
+            <div class="step">
+                <h3>Check Specifications </h3>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <p>Review the car's specifications to understand its features, performance, and amenities. This ensures
+                    the vehicle meets your expectations for a satisfying driving experience..</p>
+            </div>
+            <div class="step">
+                <h3>Check Out</h3>
+                <i class="fa-solid fa-credit-card"></i>
+                <p>Proceed to the checkout to finalize your reservation with our streamlined system. Confirm your
+                    booking and get ready to enjoy a luxurious drive in your chosen car.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <h2>About</h2>
+
+        <div class="about-container">
+            <div class="a-c-left">
+                <h3>About Lux Drive</h3>
+                <p>Lux Drive is your premier destination for luxury car rentals, offering a seamless experience tailored
+                    to discerning individuals. With a curated selection of high-end vehicles. Explore our website to
+                    find the perfect luxury car for your next journey. <br> <br> Lux Drive is a project designed to
+                    showcase our skills in web development and user experience design. While some features are still
+                    under development and may not be fully functional at this stage, we are continuously working to
+                    enhance the site's capabilities. Your feedback and support are invaluable as we refine Lux Drive to
+                    deliver a flawless rental experience. Stay tuned for updates as we implement new features to enrich
+                    your experience on our platform.</p>
+            </div>
+            <div class="a-c-right">
+                <h3>About Me</h3>
+                <p>Hello! I'm Vikash, a fresh graduate passionate about Frontend Web Development. Eager to leverage my
+                    newly acquired skills and bring innovation solution to your projects. With a strong foundation in
+                    HTML, CSS and JavaScript. I am ready to tackle challenges head on. My enthusiasm for learning and
+                    collaboration makes me a valuable addition to any team.
+                    <br><br>
+                    My main focus these days is to building accessible user interfaces. I most enjoy building software
+                    in the sweet spot where design and development meet - things that look good but are also built well
+                    under the hood.
+                </p>
+
+                <button>See More</button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-form">
+
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="number" placeholder="Phone No.">
+                <button>Send</button>
+            </form>
+            <form>
+                <textarea placeholder="Your Message"></textarea>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="f-1">
+            <h3>About Us</h3>
+            <p>Cars</p>
+            <p>Contact</p>
+            <p>Stores</p>
+            <p>Affiliates</p>
+            <p>Services</p>
+            <p>Design and Development</p>
+        </div>
+        <div class="f-2">
+            <h3>Useful Links</h3>
+            <p>Support</p>
+            <p>Cancel</p>
+            <p>Change</p>
+            <p>FAQ</p>
+            <p>Feedback</p>
+            <p>Stories</p>
+        </div>
+        <div class="f-3">
+            <h3>Cars</h3>
+            <p>MERCEDES</p>
+            <p>BMW</p>
+            <p>AUDI</p>
+            <p>TESLA</p>
+            <p>PORCHE</p>
+            <p>ROLLS-ROYCE</p>
+        </div>
+        <div class="f-4">
+            <div>
+
+                <h3>Follow Me</h3>
+                <i class="fa-solid fa-instagram"></i>
+                <i class="fa-solid fa-twitter"></i>
+                <i class="fa-solid fa-square-facebook"></i>
+                <i class="fa-solid fa-whatsapp"></i>
+            </div>
+            <div>
+                <p>Designed and Developed by Vikash Mandal</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
