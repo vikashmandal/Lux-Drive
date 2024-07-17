@@ -368,7 +368,6 @@
     .main-container .home-info {
         justify-content: center;
 
-
     }
 
 }
@@ -595,8 +594,6 @@
 
     }
 
-
-
     .contact .contact-form {
         margin-top: 30px;
         display: flex;
@@ -610,7 +607,6 @@
         margin-bottom: 40px;
 
     }
-
 
     .contact-form form button {
         position: absolute;
@@ -673,48 +669,7 @@
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* Check Out Page */
-
-.checkout-page {
-    /* height: 100vh; */
-    /* width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 5px;
-    z-index: 99; */
-    /* display: none; */
-
-}
 
 .co-container{
     width: 100%;
@@ -762,7 +717,7 @@ form label{
     flex: 1;
     display: flex;
     flex-direction: column;
-
+    
 }
 
 .co-container .co-right form>div{
@@ -818,22 +773,9 @@ width:fit-content;
     margin-top: 5px;
 }
 
-
-
-
-
-
-
-
-
-
 }
 
-
-
 @media screen and (min-width:800px) and (max-width:1000px) {
-
-    
 
     .main-container .home-info {
         display: flex;
@@ -842,13 +784,4 @@ width:fit-content;
     
     }
 
-        
-
-
-
-
-
-
 }
-
-
