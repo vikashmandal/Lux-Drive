@@ -318,6 +318,7 @@ header ul li a:hover::before {
 .slider {
     display: flex;
     height: 100vh;
+    position: relative;
 
 }
 
@@ -451,23 +452,25 @@ header ul li a:hover::before {
     transition: 0.3s ease-in-out;
     font-size: 18px;
     margin-top: 10px;
+    cursor: pointer;
 
 }
 
-.single-car_page-right button:hover {
+.co-btn:hover {
     background-color: #222;
     color: #fff;
-    cursor: pointer;
 
 }
 
 /* Check Out Page */
 
 .checkout-page {
-    width: 70vh;
-    height: 96vh;
-    padding: 10px 20px;
-    background-color: #000000f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffffe5;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -480,40 +483,111 @@ header ul li a:hover::before {
 
 }
 
-.checkout-page h2 {
-    color: #fff;
-    border-color: #fff;
-
-}
-
-.checkout-page .top form,
-.checkout-page .bottom form {
+.co-container{
+    width: 75%;
+    height: 80%;
+    background-color: #1986a1c6;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-
+    
 }
 
-.checkout-page .top input,
-select,
-.checkout-page .bottom input {
-    outline: none;
+.co-container .co-left{
+    flex: 1;
+    border-right: 1.5px solid #fff;
+    padding: 20px 30px;
+    
+}
+
+.co-container .co-left h2, .co-container .co-right h2{
+    border-bottom: 1.5px solid #fff;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+
+.co-container .co-left form input{
+    width: 100%;
+    padding: 5px 8px;
+    margin-bottom: 16px;
     border: none;
+    outline: none;
     border-bottom: 1px solid #fff;
     background-color: transparent;
-    padding: 5px;
     color: #fff;
+    font-size: 14px;
+
 }
 
-.top form input::placeholder,
-.bottom form input::placeholder {
 
+.co-container .co-left form select{
+    width: 100%;
+    padding: 5px 8px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
     color: #fff;
+
 }
 
-input[type='date'] {
-    --webkit-calendar-picker-indicator: #fff;
+.co-container .co-left form select option{
+    background-color: #222;
+
+}
+
+.co-container input::placeholder{
     color: #fff;
+    
+}
+
+form label{
+    color: #fff;
+    font-size: 14px;
+}
+
+form select{
+    flex: 1;
+    
+}
+
+.co-container .co-right{
+    padding: 20px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.co-container .co-right form{
+    flex: 1;
+
+}
+
+.co-container .co-right form input{
+    width: 100%;
+    padding: 5px 8px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.co-close i{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #222;
+
 }
 
 /* Guide */
@@ -579,7 +653,6 @@ input[type='date'] {
     align-items: center;
     margin-block: 10px;
 
-
 }
 
 .guide-step_container .step:hover h3 {
@@ -623,12 +696,14 @@ input[type='date'] {
     border: 1px solid #fff;
     border-radius: 10px;
     display: flex;
+
 }
 
 .about-container h3 {
     display: inline-block;
     border-bottom: 1px solid #fff;
     margin-bottom: 25px;
+
 }
 
 .about-container p {
@@ -637,12 +712,15 @@ input[type='date'] {
     line-height: 24px;
     margin-top: 10px;
     opacity: 0.8;
+
 }
 
 .a-c-left {
     flex: 2;
     border-right: 1px solid #fff;
     padding: 15px 20px;
+    overflow: hidden;
+
 }
 
 .a-c-right {
@@ -650,11 +728,12 @@ input[type='date'] {
     flex: 3;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+
 }
 
 .a-c-right p {
     flex: 1;
-
 
 }
 
@@ -676,7 +755,6 @@ input[type='date'] {
 
 }
 
-
 /* CONTACT */
 
 .contact {
@@ -687,6 +765,7 @@ input[type='date'] {
 .contact h2 {
     color: #1985a1;
     border-bottom: 1.3px solid #1985a1;
+
 }
 
 .contact .contact-form {
@@ -757,6 +836,21 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
+
+}
+
+.f-left {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.f-right {
+    display: flex;
+    flex: 1;
+
 }
 
 footer .f-1,
@@ -774,9 +868,11 @@ footer .f-4 div:first-child {
     align-items: center;
     justify-content: center;
     gap: 10px;
+
 }
 
 footer p {
     cursor: pointer;
     opacity: 0.8;
+
 }

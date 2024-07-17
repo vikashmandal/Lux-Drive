@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lux Drive</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -155,62 +155,85 @@
                 </div>
 
                 <h2 class="common-h2">Prices</h2>
-
                 <h3 class="hourly-price common-h3">$120/hour</h3>
                 <h3 class="daily-price common-h3">$199/day</h3>
                 <h3 class="monthly-price common-h3">$2999/month</h3>
-
                 <h2 class="common-h2">Rent Now</h2>
-
-
                 <button class="co-btn">Check Out</button>
 
             </div>
 
         </div>
 
-    </div>
+        <!-- Check Out Section -->
 
-    <!-- Check Out Section -->
+        <div class="checkout-page">
 
-    <div class="checkout-page">
-        <div class="top">
-            <h2 class="common-h2">Personal Information</h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="number" placeholder="Phone">
+            <div class="co-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
 
-                <select name="" id="">
-                    <option value="">Mercedes-Benz S-Class</option>
-                    <option value="">BMW 7 Series</option>
-                    <option value="">Audi A8</option>
-                    <option value="">Tesla Model S</option>
-                    <option value="">Porsche Panamera</option>
-                    <option value="">Rolls Royce Phantom</option>
-                </select>
+            <div class="co-container">
 
-                <input type="text" placeholder=" Car Delivery Address">
-                <input type="date" placeholder="From">
-                <input type="date" placeholder="To">
+                <div class="co-left">
 
-            </form>
+                    <h2>Personal Information</h2>
 
-        </div>
+                    <form>
 
-        <div class="bottom">
+                        <input type="text" placeholder="Name">
+                        <input type="number" placeholder="Phone">
+                        <input type="text" placeholder="Email">
+                        <select>
+                            <option value="">Mercedes-Benz S-Class</option>
+                            <option value="">BMW 7 Series</option>
+                            <option value="">Audi A8</option>
+                            <option value="">Tesla Model S</option>
+                            <option value="">Porsche Panamera</option>
+                            <option value="">Rolls Royce Phantom</option>
+                        </select>
+                        <input type="text" placeholder=" Car Delivery Address">
+                        <input type="number" placeholder="Pincode">
 
-            <h2 class="common-h2">Card Details</h2>
+                        <select id="time-period">
+                            <option value="">Hourly</option>
+                            <option value="">Single Day</option>
+                            <option value="">Monthly</option>
+                        </select>
 
-            <form>
-                <input type="number" placeholder="Card Number">
-            </form>
-            <form>
-                <input type="text" placeholder="mm">
-                <input type="text" placeholder="yyyy">
-                <input type="text" placeholder="cvv">
+                    </form>
 
-            </form>
-            <button class="co-btn">check Out</button>
+                    <form>
+
+                        <input type="date" placeholder="From">
+                        <input type="date" placeholder="To">
+
+                    </form>
+
+                </div>
+
+                <div class="co-right">
+
+                    <h2>Card Details</h2>
+
+                    <form>
+
+                        <input type="number" placeholder="Card Number">
+                        <div>
+
+                            <input type="text" placeholder="mm">
+                            <input type="text" placeholder="yyyy">
+                            <input type="text" placeholder="cvv">
+                        </div>
+
+                    </form>
+
+                    <button class="co-btn">Check Out</button>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -234,7 +257,7 @@
                 <h3>Check Specifications </h3>
                 <i class="fa-regular fa-pen-to-square"></i>
                 <p>Review the car's specifications to understand its features, performance, and amenities. This ensures
-                    the vehicle meets your expectations for a satisfying driving experience..</p>
+                    the vehicle meets your expectations for a satisfying driving experience.</p>
             </div>
             <div class="step">
                 <h3>Check Out</h3>
@@ -282,7 +305,6 @@
 
         </div>
 
-
     </section>
 
     <!-- CONTACT -->
@@ -305,44 +327,52 @@
     </section>
 
     <footer>
-        <div class="f-1">
-            <h3>About Us</h3>
-            <p>Cars</p>
-            <p>Contact</p>
-            <p>Stores</p>
-            <p>Affiliates</p>
-            <p>Services</p>
-            <p>Design and Development</p>
-        </div>
-        <div class="f-2">
-            <h3>Useful Links</h3>
-            <p>Support</p>
-            <p>Cancel</p>
-            <p>Change</p>
-            <p>FAQ</p>
-            <p>Feedback</p>
-            <p>Stories</p>
-        </div>
-        <div class="f-3">
-            <h3>Cars</h3>
-            <p>MERCEDES</p>
-            <p>BMW</p>
-            <p>AUDI</p>
-            <p>TESLA</p>
-            <p>PORCHE</p>
-            <p>ROLLS-ROYCE</p>
-        </div>
-        <div class="f-4">
-            <div>
+        <div class="f-left">
 
-                <h3>Follow Me</h3>
-                <i class="fa-solid fa-instagram"></i>
-                <i class="fa-solid fa-twitter"></i>
-                <i class="fa-solid fa-square-facebook"></i>
-                <i class="fa-solid fa-whatsapp"></i>
+            <div class="f-1">
+                <h3>About Us</h3>
+                <p>Cars</p>
+                <p>Contact</p>
+                <p>Stores</p>
+                <p>Affiliates</p>
+                <p>Services</p>
+                <p>Development</p>
             </div>
-            <div>
-                <p>Designed and Developed by Vikash Mandal</p>
+            <div class="f-2">
+                <h3>Useful Links</h3>
+                <p>Support</p>
+                <p>Cancel</p>
+                <p>Change</p>
+                <p>FAQ</p>
+                <p>Feedback</p>
+                <p>Stories</p>
+            </div>
+            <div class="f-3">
+                <h3>Cars</h3>
+                <p>MERCEDES</p>
+                <p>BMW</p>
+                <p>AUDI</p>
+                <p>TESLA</p>
+                <p>PORCHE</p>
+                <p>ROLLS-ROYCE</p>
+            </div>
+        </div>
+        <div class="f-right">
+
+            <div class="f-4">
+                <div>
+
+                    <h3>Follow Me</h3>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </div>
+
+                <div>
+                    <p>Designed and Developed by Vikash Mandal</p>
+                </div>
             </div>
         </div>
     </footer>
